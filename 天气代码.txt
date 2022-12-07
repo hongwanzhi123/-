@@ -100,7 +100,7 @@ model = model.to(device)
 
 optimizer = torch.optim.Adam(params=model.parameters(), lr=0.0001)
 criterion = nn.CrossEntropyLoss()
-for epoch in range(10):
+for epoch in range(50):
     train_loss, val_loss = [], []
     train_acc1, train_acc2 = [], []
     val_acc1, val_acc2 = [], []
